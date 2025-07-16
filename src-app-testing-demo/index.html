@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather API Testing Activity</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+
+    <h1>CMPT 276 - In-Class Application Testing Activity</h1>
+
+    <div class="instructions">
+        <h2>Instructions:</h2>
+        <ol>
+            <li>💻 Open Developer Console (Right Click → Inspect → Console Tab) to see test results.</li>
+            <li>🔄 Run the starter test cases included in <code>weatherTest.js</code>.</li>
+            <li>📝 Complete the following testing tasks in <code>weatherTest.js</code>:</li>
+        </ol>
+    </div>
+
+    <br>
+
+    <div class="task-list">
+        <h2>Task List:</h2>
+        <ol>
+            <li><strong>Task 1:</strong> Write a unit test for <code>formatWeatherData()</code>.</li>
+            <ul>
+                <li>Sample input: <code>{ main: { temp: 30 }, weather: [{ description: "partly cloudy" }] }</code></li>
+                <li>Expected output: <code>{ temperature: 30, description: "partly cloudy" }</code></li>
+            </ul>
+
+            <li><strong>Task 2:</strong> Write a unit test for <code>convertCelsiusToFahrenheit()</code>.</li>
+            <ul>
+                <li>Test with inputs:
+                    <ul>
+                        <li><code>15°C</code> → Expected <code>59°F</code></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <li><strong>Task 3:</strong> Write an integration test for <code>fetchWeather()</code> using a valid city.</li>
+            <ul>
+                <li>Test input: <code>"New York"</code></li>
+                <li>Expect the response to contain <code>temperature</code> and <code>description</code> properties.</li>
+            </ul>
+
+            <li><strong>Task 4:</strong> Write an integration test for <code>fetchWeather()</code> using an invalid city.</li>
+            <ul>
+                <li>Test input: <code>"InvalidCity"</code></li>
+                <li>Expect the test to handle the error gracefully and assert that an error is thrown.</li>
+            </ul>
+        </ol>
+    </div>
+
+    <br>
+
+    <script src="./JS/weather.js"></script>
+    <script src="./JS/weatherTest.js"></script>
+
+</body>
+</html>
